@@ -1,0 +1,27 @@
+ng-class——<div ng-class="{'class1':true,'class2':false}"></div>
+ng-class作用解耦和，不用在js中再去操作dom
+
+transition——基本用法
+    #div{
+      width:200px;
+      transition: width .6s linear;
+    }
+    var div = document.getElementById('div');
+    div.onclick = function() {
+      div.style.width = '20px';
+    }
+    
+animation——基本用法
+    @keyframes clockAnimal {
+      0 {
+        opactiy:1;
+      }
+      100% {
+        opacity:0;
+      }
+    }
+    .div {
+      animation: clockAnimal .6s linear;
+    }
+    
+ng-hide='true or false'
